@@ -51,7 +51,7 @@ def sendmessage(message,phonenumber,countrycode):
         else:
             return "It seems the message did not go through."
     except IOError, e:
-        return e.code +" ; "+e.reason
+        return str(e.code) + " ; "+e.reason
 
 
 def solsave(phenny,input):
